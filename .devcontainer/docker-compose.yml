@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: "."
+    command: sleep infinity
+    volumes:
+    - ../:/workspace/nosql-workbench-converter
+    - /workspace/nosql-workbench-converter/target
